@@ -1,13 +1,14 @@
 *{
-    /*Elimino margine e padding di default da tutti gli elementi*/
+    /*Elimino margine di default da tutti gli elementi*/
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 header{
     width: 100%;
     height: 16vh;
+
+
     background-color: #4da2ff;
     background-image: url('../img/pattern.png');
     background-size: auto 200%;  /*Rendo solo il 50% (in altezza) dell'immagine di sfondo visibile*/
@@ -57,4 +58,43 @@ main{
 
 #articleImages img{
    height: 330px;
+}
+
+.paragraph{
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+.paragraph .highlight {
+    background-color: #ffff00;
+}
+
+ul {
+    /*ul ha padding-left=40px di default. Rimuovendolo i punti dei 'li' vengono rimossi, quindi riduco padding-left a 20px*/
+    padding-left: 20px;
+}
+
+table{
+    /*Rimuove gli spazi tra le celle della tabella*/
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+thead{
+    background-color: #1aabe6;
+    text-align: left;
+    color: white;
+}
+
+.smallColumn{
+    width: 25%;
+}
+
+.largeColumn{
+    width: 50%;
+}
+
+/*Cambia colore di sfondo alle righe dispari della tabella*/
+tbody tr:nth-of-type(odd){
+    background-color: #b2e6f2;
 }
