@@ -1,0 +1,130 @@
+*{
+    /*Elimino margine di default da tutti gli elementi*/
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 16vh;
+
+
+    background-color: #4da2ff;
+    background-image: url('../img/pattern.png');
+    background-size: auto 200%;  /*Rendo solo il 50% (in altezza) dell'immagine di sfondo visibile*/
+
+    position: relative;
+}
+
+#logo{
+    height: 50%;
+    
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+main{
+    width: 100%;
+   
+    padding: 0 5px;
+}
+
+#articleData{
+    width: 100%;
+
+    margin: 15px 0;
+}
+
+#articleData span{
+    color: gray;
+    font-weight: bold;
+}
+
+/*Link all'autore*/
+#articleData #author a{
+    text-decoration: none;
+    color: #33b4e8;
+}
+
+#publicationDate{
+    font-size: 12px;
+}
+
+#articleImages{
+    width: 100%;
+    font-size: 0.7em;
+}
+
+#articleImages img{
+   height: 330px;
+}
+
+.paragraph{
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+.paragraph .highlight {
+    background-color: #ffff00;
+}
+
+ul {
+    /*ul ha padding-left=40px di default. Rimuovendolo i punti dei 'li' vengono rimossi, quindi riduco padding-left a 20px*/
+    padding-left: 20px;
+}
+
+table{
+    /*Rimuove gli spazi tra le celle della tabella*/
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+thead{
+    background-color: #1aabe6;
+    text-align: left;
+    color: white;
+}
+
+.smallColumn{
+    width: 25%;
+}
+
+.largeColumn{
+    width: 50%;
+}
+
+/*Cambia colore di sfondo alle righe dispari della tabella*/
+tbody tr:nth-of-type(odd){
+    background-color: #b2e6f2;
+}
+
+h3{
+    color: gray;
+}
+
+#relatedLinks{
+    padding: 0 5px;
+}
+
+.imageLinkContainer{
+    width: 30%;
+
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    margin: 10px 0;
+    
+    position: relative;
+}
+
+.imageLinkContainer span{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.imageLinkContainer img{
+    height: 100%;
+}
