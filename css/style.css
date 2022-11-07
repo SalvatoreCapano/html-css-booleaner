@@ -49,3 +49,12 @@ main{
 #publicationDate{
     font-size: 12px;
 }
+
+#articleImages{
+    width: 100%;
+    font-size: 0.7em;
+}
+
+#articleImages img{
+   height: 330px;
+}
