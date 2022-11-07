@@ -17,7 +17,35 @@ header{
 
 #logo{
     height: 50%;
+    
     position: absolute;
     left: 10px;
     bottom: 10px;
+}
+
+main{
+    width: 100%;
+   
+    padding: 0 5px;
+}
+
+#articleData{
+    width: 100%;
+
+    margin: 15px 0;
+}
+
+#articleData span{
+    color: gray;
+    font-weight: bold;
+}
+
+/*Link all'autore*/
+#articleData #author a{
+    text-decoration: none;
+    color: #33b4e8;
+}
+
+#publicationDate{
+    font-size: 12px;
 }
