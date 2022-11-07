@@ -1,3 +1,5 @@
+/*Nella versione bonus riduco la width del main e del container relatedLinks ad 80% 
+e imposto ad entrambi un margin auto*/
 *{
     /*Elimino margine di default da tutti gli elementi*/
     margin: 0;
@@ -10,7 +12,7 @@ header{
 
 
     background-color: #4da2ff;
-    background-image: url('../img/pattern.png');
+    background-image: url('../../img/pattern.png');
     background-size: auto 200%;  /*Rendo solo il 50% (in altezza) dell'immagine di sfondo visibile*/
 
     position: relative;
@@ -25,8 +27,9 @@ header{
 }
 
 main{
-    width: 100%;
+    width: 80%;
    
+    margin: auto;
     padding: 0 5px;
 }
 
@@ -57,7 +60,7 @@ main{
 }
 
 #articleImages img{
-   height: 330px;
+   height: 270px;
 }
 
 .paragraph{
@@ -104,6 +107,8 @@ h3{
 }
 
 #relatedLinks{
+    width: 80%;
+    margin: auto;
     padding: 0 5px;
 }
 
